@@ -1,5 +1,12 @@
 ﻿// server/src/index.js  (or app.js if that's your entry)
-import "dotenv/config";
+import dotenv from 'dotenv';
+dotenv.config();
+
+console.log("Cloudinary Name:", process.env.CLOUDINARY_CLOUD_NAME);
+console.log("API Key loaded:", !!process.env.CLOUDINARY_API_KEY);
+console.log("Secret loaded:", !!process.env.CLOUDINARY_API_SECRET);
+
+
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
