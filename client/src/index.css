@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SMOKE TEST: if Tailwind is compiling, background becomes light red. */
+body { @apply bg-red-100; }
+
+:root{
+  --brand-pink:#ff69b4;
+  --brand-purple:#7c3aed;
+  --brand-blue:#3b82f6;
+}
